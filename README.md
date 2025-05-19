@@ -83,7 +83,7 @@ Add a new root user:
 bash
 Copy
 Edit
-adduser newuser1
+adduser suruchi
 View credentials:
 
 /etc/passwd
@@ -95,7 +95,8 @@ Example hash:
 perl
 Copy
 Edit
-newuser1:$1$M/R1KkTD$XGDnXXTvygtDeyM3JiDlU0:20224:0:99999:7:::
+suruchi:$1$M/R1KkTD$XGDnXXTvygtDeyM3JiDlU0:20224:0:99999:7:::
+
 6. 🔓 Password Cracking
 Save hash to a file (e.g., hash.txt)
 
@@ -106,6 +107,7 @@ Copy
 Edit
 john hash.txt
 john --show hash.txt
+
 7. 🛠️ Remediation Recommendations
 Issue	Risk Level	Remediation
 vsftpd 2.3.4	High	Upgrade to version 3.0.5
